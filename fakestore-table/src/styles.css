@@ -1,0 +1,164 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+* { box-sizing: border-box; }
+
+.container {
+  padding: 16px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+select, input {
+  padding: 6px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  outline: none;
+}
+
+input::placeholder { color: #999; }
+
+.tableWrap {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead th {
+  background: #f4f4f4;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 9px 10px;
+  border-bottom: 1px solid #efefef;
+  vertical-align: top;
+}
+
+tbody tr:hover {
+  background: #fafafa;
+}
+
+.small {
+  color: #666;
+  font-size: 12px;
+}
+
+.footerRow td {
+  background: #fff;
+  font-weight: 600;
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stars {
+  letter-spacing: 1px;
+}
+
+.thumb {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  background: #fff;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background: #f6f6f6;
+}
+
+/* Cart */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 16px;
+  align-items: start;
+}
+
+.cart {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 12px;
+  position: sticky;
+  top: 12px;
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 34px 1fr auto;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #efefef;
+}
+
+.cartItem:last-child {
+  border-bottom: none;
+}
+
+.qtyInput {
+  width: 70px;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.mutedBtn {
+  border: 1px solid #cfcfcf;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.mutedBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
